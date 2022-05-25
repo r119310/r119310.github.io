@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     background-color: rgb(252, 247, 241);
 }
@@ -11,33 +11,35 @@ body{
     left: 0px;
     height: 100%;
     width: 100%;
-    display: flex;
 }
 
-.Names {
+.nameBox {
     position: fixed;
+    left: 50%;
+    transform: translateX(-70%);
     margin: 0;
 }
 
 .realName {
-    position: absolute;
-    left: 8vmin;
+    position: relative;
     font-size: 14vmin;
     margin: 0;
+    top: 0;
     width: auto;
 }
 
 .fakeName {
     font-size: 2.8vmin;
     margin: 0;
-    margin-top: 13vmin;
-    margin-left: 70vmin;
+    margin-left: auto;
+    right: 0;
     width: auto;
+    position: relative;
 }
 
 .organization {
     position: relative;
-    margin-left: 43vmin;
+    margin: 0;
 }
 
 main {
@@ -45,33 +47,54 @@ main {
     left: 0;
     margin: 0px;
     margin-top: 15vmin;
-    
 }
 
-.mainContentBox{
+.langChangeButton {
+    position: fixed;
+    right: 3%;
+    top: 3vmin;
+    background-color: aquamarine;
+    border-radius: 10px;
+    height: 4vmin;
+    width: 10vmin;
+}
+
+.lanBox {
+    display: flex;
+    margin: 0;
+    width: auto;
+    text-align: center;
+}
+
+.mainContentBox {
     margin-top: 25vmin;
     position: absolute;
-    width:100%;
+    width: 100%;
     height: auto;
     z-index: 100;
 }
 
-.beginTriangle{
+.beginTriangle {
     display: block;
     background-image: linear-gradient(to top left, rgb(88, 205, 255) 48%, rgba(0, 0, 0, 0) 50%);
     height: 10vmin;
     width: 100%;
+    padding-bottom: 4px;
 }
 
-.mainContent{
-    position:initial;
-    width:100%;
+.mainContent {
+    padding-top: 2vmin;
+    padding-left: 5vmin;
+    position: initial;
+    width: 100%;
     height: auto;
     background-color: rgb(88, 205, 255);
-    z-index: 100;
+    z-index: 10;
 }
 
-h2{
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5vmin;
     margin: 0;
 }
 
