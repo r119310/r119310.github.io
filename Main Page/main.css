@@ -1,16 +1,21 @@
+body{
+    margin: 0;
+    background-color: rgb(252, 247, 241);
+}
+
 .NamesandOrganization {
+    position: relative;
     margin-top: 15vmin;
     margin-left: 5vmin;
-    position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
     display: flex;
-    z-index: 5;
 }
 
 .Names {
+    position: fixed;
     margin: 0;
 }
 
@@ -36,12 +41,38 @@
 }
 
 main {
-    top: 0px;
-    left: 0px;
-    background-color: blue;
+    top: 0;
+    left: 0;
     margin: 0px;
-    margin-top: 40vmin;
-    z-index: 10;
+    margin-top: 15vmin;
+    
+}
+
+.mainContentBox{
+    margin-top: 25vmin;
+    position: absolute;
+    width:100%;
+    height: auto;
+    z-index: 100;
+}
+
+.beginTriangle{
+    display: block;
+    background-image: linear-gradient(to top left, rgb(88, 205, 255) 48%, rgba(0, 0, 0, 0) 50%);
+    height: 10vmin;
+    width: 100%;
+}
+
+.mainContent{
+    position:initial;
+    width:100%;
+    height: auto;
+    background-color: rgb(88, 205, 255);
+    z-index: 100;
+}
+
+h2{
+    margin: 0;
 }
 
 footer {
