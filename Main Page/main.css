@@ -1,0 +1,52 @@
+.NamesandOrganization {
+    margin-top: 15vmin;
+    margin-left: 5vmin;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 5;
+}
+
+.Names {
+    margin: 0;
+}
+
+.realName {
+    position: absolute;
+    left: 8vmin;
+    font-size: 14vmin;
+    margin: 0;
+    width: auto;
+}
+
+.fakeName {
+    font-size: 2.8vmin;
+    margin: 0;
+    margin-top: 13vmin;
+    margin-left: 70vmin;
+    width: auto;
+}
+
+.organization {
+    position: relative;
+    margin-left: 43vmin;
+}
+
+main {
+    top: 0px;
+    left: 0px;
+    background-color: blue;
+    margin: 0px;
+    margin-top: 40vmin;
+    z-index: 10;
+}
+
+footer {
+    position: fixed;
+    bottom: 2vmin;
+    left: 50%;
+    transform: translateX(-50%);
+}
