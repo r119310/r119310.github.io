@@ -3,6 +3,10 @@ body {
     background-color: rgb(252, 247, 241);
 }
 
+p{
+    margin: 0;
+}
+
 .NamesandOrganization {
     position: relative;
     margin-top: 15vmin;
@@ -42,7 +46,7 @@ body {
     margin: 0;
 }
 
-main {
+main {color: rgb(15, 11, 66);
     top: 0;
     left: 0;
     margin: 0px;
@@ -50,20 +54,27 @@ main {
 }
 
 .langChangeButton {
+    text-align: center;
     position: fixed;
-    right: 3%;
-    top: 3vmin;
-    background-color: aquamarine;
+    right: 6vw;
+    top: 6vh;
+    background-color: rgb(255, 181, 181);;
     border-radius: 10px;
     height: 4vmin;
     width: 10vmin;
 }
 
 .lanBox {
-    display: flex;
+    position: relative;
     margin: 0;
     width: auto;
-    text-align: center;
+    height: 100%;
+}
+
+.langText{
+    color: rgb(15, 11, 66);
+    font-size: 2.8vmin;
+    font-weight: bold;
 }
 
 .mainContentBox {
@@ -86,7 +97,7 @@ main {
     padding-top: 2vmin;
     padding-left: 5vmin;
     position: initial;
-    width: 100%;
+    width: calc(100% - 5vmin);
     height: auto;
     background-color: rgb(88, 205, 255);
     z-index: 10;
@@ -96,6 +107,99 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 5vmin;
     margin: 0;
+    text-decoration: underline rgb(252, 247, 241);
+}
+
+.tabBox{
+    margin-left: 4vmin;
+}
+
+.upperSpace{
+    margin-top: 2vmin;
+}
+
+.profileBox{
+    margin-bottom: 4vmin;
+    font-size: 2.5vmin;
+    font-weight: 600;
+}
+
+.biographTable{
+    width: 75vw;
+    padding: 10px;
+    background-color: rgb(143, 165, 179);
+    border-radius: 10px;
+}
+
+.tableTop{
+    color: rgb(252, 247, 241);
+    font-weight: 800;
+}
+
+.tableMain{
+    border: 2px black solid;
+    background-color: rgb(252, 247, 241);
+}
+
+.biographCell{
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.worksButtonArea{
+    height: 30px;
+    margin-right: 6vmin;
+    display: flex;
+}
+
+.worksButton{
+    height: 100%;
+    width: 80px;
+    background-color: rgba(255, 181, 181,0.85);
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 3px rgba(0, 0, 0, 0.35) solid;
+    text-align: center;
+    font-size: 20px;
+}
+
+.selectedWorksButton{
+    background-color: rgb(255, 181, 181);
+    border-color:rgb(0, 0, 0);
+    font-weight: 800;
+}
+
+.worksTable{
+    width: 75vw;
+    height: auto;
+}
+
+.worksImgCell{
+    background-color: rgb(252, 247, 241);
+    height: 100px;
+    width: 140px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.worksCellSpace{
+    width: 0.5vw;
+}
+
+.worksTextCell{
+    background-color: rgb(252, 247, 241);
+    margin-left: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.endTriangle {
+    display: block;
+    background-image: linear-gradient(to bottom right, rgb(88, 205, 255) 48%, rgba(0, 0, 0, 0) 50%);
+    height: 10vmin;
+    width: 100%;
+    padding-bottom: 4px;
+    margin-bottom: 5vmin;
 }
 
 footer {
