@@ -3,7 +3,7 @@ body {
     background-color: rgb(252, 247, 241);
 }
 
-p{
+p {
     margin: 0;
 }
 
@@ -46,7 +46,8 @@ p{
     margin: 0;
 }
 
-main {color: rgb(15, 11, 66);
+main {
+    color: rgb(15, 11, 66);
     top: 0;
     left: 0;
     margin: 0px;
@@ -58,7 +59,8 @@ main {color: rgb(15, 11, 66);
     position: fixed;
     right: 6vw;
     top: 6vh;
-    background-color: rgb(255, 181, 181);;
+    background-color: rgb(255, 181, 181);
+    ;
     border-radius: 10px;
     height: 4vmin;
     width: 10vmin;
@@ -71,7 +73,7 @@ main {color: rgb(15, 11, 66);
     height: 100%;
 }
 
-.langText{
+.langText {
     color: rgb(15, 11, 66);
     font-size: 2.8vmin;
     font-weight: bold;
@@ -90,7 +92,6 @@ main {color: rgb(15, 11, 66);
     background-image: linear-gradient(to top left, rgb(88, 205, 255) 48%, rgba(0, 0, 0, 0) 50%);
     height: 10vmin;
     width: 100%;
-    padding-bottom: 4px;
 }
 
 .mainContent {
@@ -110,52 +111,55 @@ h2 {
     text-decoration: underline rgb(252, 247, 241);
 }
 
-.tabBox{
+.tabBox {
     margin-left: 4vmin;
 }
 
-.upperSpace{
+.upperSpace {
     margin-top: 2vmin;
 }
 
-.profileBox{
+.profileBox {
     margin-bottom: 4vmin;
     font-size: 2.5vmin;
     font-weight: 600;
 }
 
-.biographTable{
+.biographTable {
     width: 75vw;
     padding: 10px;
     background-color: rgb(143, 165, 179);
     border-radius: 10px;
 }
 
-.tableTop{
+.tableTop {
     color: rgb(252, 247, 241);
+    background-color: rgba(0, 0, 0, 0);
     font-weight: 800;
 }
 
-.tableMain{
+.tableMain {
     border: 2px black solid;
+}
+
+.biographCell {
+    padding-left: 10px;
+    font-weight: 600;
     background-color: rgb(252, 247, 241);
 }
 
-.biographCell{
-    padding-left: 10px;
-    font-weight: 600;
-}
-
-.worksButtonArea{
+.worksButtonArea {
     height: 30px;
-    margin-right: 6vmin;
+    float: right;
+    margin-right:18vw;
+    margin-bottom: 10px;
     display: flex;
 }
 
-.worksButton{
+.worksButton {
     height: 100%;
     width: 80px;
-    background-color: rgba(255, 181, 181,0.85);
+    background-color: rgba(255, 181, 181, 0.85);
     margin-left: 10px;
     border-radius: 10px;
     border: 3px rgba(0, 0, 0, 0.35) solid;
@@ -163,18 +167,18 @@ h2 {
     font-size: 20px;
 }
 
-.selectedWorksButton{
+.selectedWorksButton {
     background-color: rgb(255, 181, 181);
-    border-color:rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
     font-weight: 800;
 }
 
-.worksTable{
+.worksTable {
     width: 75vw;
     height: auto;
 }
 
-.worksImgCell{
+.worksImgCell {
     background-color: rgb(252, 247, 241);
     height: 100px;
     width: 140px;
@@ -182,11 +186,25 @@ h2 {
     border-bottom-left-radius: 10px;
 }
 
-.worksCellSpace{
-    width: 0.5vw;
+.fitImg2Cell{
+    display: flex;
+    margin: auto;
+    height: 90%;
+    width: auto;
+    pointer-events: none; 
 }
 
-.worksTextCell{
+.horizontalCellSpace {
+    background-color: rgba(0, 0, 0, 0);
+    height: 0.1vh;
+}
+
+.verticalCellSpace {
+    background-color: rgba(0, 0, 0, 0);
+    width: 0.2vw;
+}
+
+.worksTextCell {
     background-color: rgb(252, 247, 241);
     margin-left: 2px;
     border-top-right-radius: 10px;
@@ -198,13 +216,12 @@ h2 {
     background-image: linear-gradient(to bottom right, rgb(88, 205, 255) 48%, rgba(0, 0, 0, 0) 50%);
     height: 10vmin;
     width: 100%;
-    padding-bottom: 4px;
-    margin-bottom: 5vmin;
+    margin-bottom: 8vmin;
 }
 
 footer {
     position: fixed;
-    bottom: 2vmin;
+    bottom: 4vmin;
     left: 50%;
     transform: translateX(-50%);
 }
