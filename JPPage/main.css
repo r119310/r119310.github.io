@@ -9,8 +9,8 @@ p {
 
 .NamesandOrganization {
     position: relative;
-    margin-top: 15vmin;
-    margin-left: 5vmin;
+    margin-top: 15vw;
+    margin-left: 15vw;
     top: 0px;
     left: 0px;
     height: 100%;
@@ -18,22 +18,25 @@ p {
 }
 
 .nameBox {
+    width: 80vw;
     position: fixed;
-    left: 50%;
-    transform: translateX(-70%);
     margin: 0;
 }
 
 .realName {
     position: relative;
-    font-size: 14vmin;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    font-weight: 800;
+    color: white;
+    -webkit-text-stroke: 4px rgb(15, 11, 66);;
+    font-size: 8rem;
     margin: 0;
     top: 0;
     width: auto;
 }
 
 .fakeName {
-    font-size: 2.8vmin;
+    font-size: 1.8rem;
     margin: 0;
     margin-left: auto;
     right: 0;
@@ -75,7 +78,7 @@ main {
 
 .langText {
     color: rgb(15, 11, 66);
-    font-size: 2.8vmin;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -106,7 +109,7 @@ main {
 
 h2 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 5vmin;
+    font-size: 2.8rem;
     margin: 0;
     text-decoration: underline rgb(252, 247, 241);
 }
@@ -121,11 +124,12 @@ h2 {
 
 .profileBox {
     margin-bottom: 4vmin;
-    font-size: 2.5vmin;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .biographTable {
+    font-size: 1.2rem;
     width: 75vw;
     padding: 10px;
     background-color: rgb(143, 165, 179);
@@ -151,7 +155,7 @@ h2 {
 .worksButtonArea {
     height: 30px;
     float: right;
-    margin-right:18vw;
+    margin-right:20vw;
     margin-bottom: 10px;
     display: flex;
 }
@@ -209,6 +213,23 @@ h2 {
     margin-left: 2px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+h4{
+    font-size: 1.4rem;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+a{
+    font-size: 1rem;
+    color: rgb(15, 11, 66);
+    text-decoration: none;
+}
+
+.wordsText{
+    font-size: 1rem;
 }
 
 .endTriangle {
