@@ -103,11 +103,22 @@ main {
 }
 
 .mainContentBox {
-    margin-top: 28vh;
     position: absolute;
     width: 100%;
     height: auto;
     z-index: 100;
+}
+
+@media (min-width:751px){
+    .mainContentBox{
+        margin-top: 28vh;
+    }
+}
+
+@media (max-width:750px){
+    .mainContentBox{
+        margin-top: 20vh;
+    }
 }
 
 .beginTriangle {
@@ -150,6 +161,38 @@ h2 {
     font-weight: 600;
 }
 
+.profile{
+    display: grid;
+}
+
+@media (min-width:751px){
+    .profile{
+        grid-template-columns: 3fr 10px 10fr;
+    }
+}
+
+@media (max-width:750px){
+    .profile{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .profileTopic{
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    .profileColon{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        opacity: 0;
+    }
+
+    .profileContext{
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+}
+
 .biographTable {
     font-size: 1.2rem;
     width: 75vw;
@@ -177,10 +220,23 @@ h2 {
 
 .worksButtonArea {
     height: 30px;
-    float: right;
-    margin-right:20vw;
     margin-bottom: 10px;
     display: flex;
+}
+
+@media (min-width:751px){
+    .worksButtonArea{
+        float: right;
+        margin-right:20vw;
+    }
+}
+
+@media (max-width:750px){
+    .worksButtonArea{
+        margin-left: 2vw;
+        width: 80%;
+        position: relative;
+    }
 }
 
 .worksButton {
@@ -264,6 +320,6 @@ a{
 footer {
     position: fixed;
     bottom: 4vh;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
 }
