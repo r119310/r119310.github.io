@@ -25,6 +25,7 @@ p {
 
 .nameBox {
     width: 80vw;
+    height: 17vh;
     position: fixed;
     margin: 0;
 }
@@ -33,13 +34,24 @@ p {
     position: relative;
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
     font-weight: 800;
-    color: white;
-    -webkit-text-stroke: 4px rgb(15, 11, 66);;
-    font-size: 8rem;
+    color: rgb(15, 11, 66);
     margin: 0;
     top: 0;
     width: auto;
-    text-shadow: rgba(57, 18, 94, 0.36) 14px 5px;
+}
+
+@media (min-width:751px) {
+    .realName {
+        font-size: 10rem;
+        text-shadow: rgba(57, 18, 94, 0.36) 14px 5px;
+    }
+}
+
+@media (max-width:750px){
+    .realName{
+        font-size: 4rem;
+        text-shadow: rgba(57, 18, 94, 0.36) 7px 5px;
+    }
 }
 
 .fakeName {
@@ -196,7 +208,7 @@ h2 {
 .worksImgCell {
     background-color: var(--altWhite);
     height: 100px;
-    width: 140px;
+    width: 10%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }

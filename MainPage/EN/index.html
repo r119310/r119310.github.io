@@ -1,5 +1,287 @@
 <!DOCTYPE html>
+<html lang="ja">
 
-<main>
-    <p>hi</p>
-</main>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" sizes="180x180" href="../../Images/Portfilio.png">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    <title>Makoto Otsuka's Portfolio</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="langChangeButton" onclick="jpLink()">
+            <div class="langBox">
+                <div class="langText">JP</div>
+            </div>
+        </div>
+
+        <div class="NamesandOrganization">
+            <div class="nameBox">
+                <p class="realName">Makoto Otsuka</p>
+                <p class="fakeName">a.k.a. CryClo</p>
+                <p class="organization">Kobe City College of Technology Department of Electronics</p>
+            </div>
+        </div>
+        <!--NamesandOrganization-->
+        <div class="mainContentBox">
+            <div class="beginTriangle"></div>
+            <div class="mainContent">
+
+                <h2 class="upperSpace">PROFILE</h2>
+                <div class="profileBox upperSpace tabBox">
+                    <p>Bilingual Japanese Programmer in College</p>
+
+                    <table class="tabBox">
+                        <tbody>
+                            <tr>
+                                <td>Hobbies</td>
+                                <td>:</td>
+                                <td>Listening to music, making music, 3D modeling</td>
+                            </tr>
+                            <tr>
+                                <td>Useable Languages</td>
+                                <td>:</td>
+                                <td>Japanese, English, HTML, CSS, C, Processing</td>
+                            </tr>
+                            <tr>
+                                <td>Other Useable Apps</td>
+                                <td>:</td>
+                                <td>Word、Excel、Power Point、GIMP、Studio One、Blender</td>
+                            </tr>
+                            <tr>
+                                <td>In Progrees</td>
+                                <td>:</td>
+                                <td>Chinese, Spanish, JavaScript, PHP, Java, Fortran, Python, C++</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>BIOGRAPHY</h2>
+
+                <table class="tabBox upperSpace biographTable">
+                    <tbody>
+                        <tr class="tableTop">
+                            <td>Date</td>
+                            <td class="verticalCellSpace"></td>
+                            <td>Event</td>
+                        </tr>
+                        <tr class="tableMain">
+                            <td class="biographCell">2004-03-05</td>
+                            <td class="verticalCellSpace"></td>
+                            <td class="biographCell">Birth</td>
+                        </tr>
+                        <tr class="horizontalCellSpace"></tr>
+                        <tr class="tableMain">
+                            <td class="biographCell">2007</td>
+                            <td class="verticalCellSpace"></td>
+                            <td class="biographCell">Moved to the States</td>
+                        </tr>
+                        <tr class="horizontalCellSpace"></tr>
+                        <tr class="tableMain">
+                            <td class="biographCell">2011</td>
+                            <td class="verticalCellSpace"></td>
+                            <td class="biographCell">Back to Japan</td>
+                        </tr>
+                        <tr class="horizontalCellSpace"></tr>
+                        <tr class="tableMain">
+                            <td class="biographCell">2017</td>
+                            <td class="verticalCellSpace"></td>
+                            <td class="biographCell">Passed Eiken pre 1 level</td>
+                        </tr>
+                        <tr class="horizontalCellSpace"></tr>
+                        <tr class="tableMain">
+                            <td class="biographCell">2018-05-31</td>
+                            <td class="verticalCellSpace"></td>
+                            <td class="biographCell">公文英語最終教材修了合格証　獲得</td>
+                        </tr>
+                        <tr class="horizontalCellSpace"></tr>
+                        <tr class="tableMain">
+                            <td class="biographCell">2018-10-21</td>
+                            <td class="verticalCellSpace"></td>
+                            <td class="biographCell">2018全日本小中学生ロボット選手権神戸地区予選 中学生部門 特別賞</td>
+                        </tr>
+                        <tr class="horizontalCellSpace"></tr>
+                        <tr class="tableMain">
+                            <td class="biographCell">2019-04</td>
+                            <td class="verticalCellSpace"></td>
+                            <td class="biographCell">Entered Kobe City College of Technology</td>
+                        </tr>
+                        <tr class="horizontalCellSpace"></tr>
+                        <tr class="tableMain">
+                            <td class="biographCell">2019-06</td>
+                            <td class="verticalCellSpace"></td>
+                            <td class="biographCell">第119回工業英検4級 文部科学大臣賞受賞</td>
+                        </tr>
+                        <tr class="horizontalCellSpace"></tr>
+                        <tr class="tableMain">
+                            <td class="biographCell">2019-12</td>
+                            <td class="verticalCellSpace"></td>
+                            <td class="biographCell">工業英検3級合格</td>
+                        </tr>
+                        <tr class="horizontalCellSpace"></tr>
+                        <tr class="tableMain">
+                            <td class="biographCell">2021-03</td>
+                            <td class="verticalCellSpace"></td>
+                            <td class="biographCell">コロンビア大学経営大学院公式プログラム Venture for All 中高生コース 2021 修了</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <h2 class="upperSpace">WORKS</h2>
+
+                <div class="worksButtonArea">
+                    <div class="worksButton worksAllButton selectedWorksButton" onclick="workAllOn()">
+                        All
+                    </div>
+                    <div class="worksButton worksCodeButton" onclick="workCodeOn()">
+                        Code
+                    </div>
+                    <div class="worksButton worksArtButton" onclick="workArtOn()">
+                        Art
+                    </div>
+                </div>
+
+
+                <table class="upperSpace tabBox worksTable">
+                    <tbody>
+                        <div>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr>
+                                <td class="worksImgCell"><img class="fitImg2Cell" src="../../Images/Portfilio.png"></td>
+                                <td class="verticalCellSpace"></td>
+                                <td class="worksTextCell">
+                                    <h4>Portfolio</h4>
+                                    <div class="tabBox worksText">Webpage to see what I have made</div>
+                                    <div class="tabBox wordsText"><a href="https://github.com/r119310/r119310.github.io">Github</a>で確認可能</div>
+                                </td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr>
+                                <td class="worksImgCell"><img class="fitImg2Cell" src="../../Images/FourBlocksIcon.png"></td>
+                                <td class="verticalCellSpace"></td>
+                                <td class="worksTextCell">
+                                    <h4>Four Blocks</h4>
+                                    <div class="tabBox worksText">高専3年時、夏季課題として作成したプログラム</div>
+                                    <div class="tabBox worksText">はじめて1から作成したゲーム</div>
+                                </td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr>
+                                <td class="worksImgCell"><img class="fitImg2Cell" src="../../Images/CardKunIcon.png"></td>
+                                <td class="verticalCellSpace"></td>
+                                <td class="worksTextCell">
+                                    <h4>カード君</h4>
+                                    <div class="tabBox worksText">はじめてGitHubを用いて、チームで共同開発を行ったプロジェクト</div>
+                                    <div class="tabBox wordsText"><a href="">Github</a>で確認可能</div>
+                                </td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr>
+                                <td class="worksImgCell" style="background-color: rgb(188, 255, 199);"></td>
+                                <td class="verticalCellSpace"></td>
+                                <td class="worksTextCell">
+                                    <h4>Change Seat</h4>
+                                    <div class="tabBox worksText">席替えするためのプログラム　実用性〇</div>
+                                    <div class="tabBox wordsText"><a href="">Github</a>で確認可能</div>
+                                </td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr>
+                                <td class="worksImgCell"><img class="fitImg2Cell" src="../../Images/AvoidtheBeamIcon.png"></td>
+                                <td class="verticalCellSpace"></td>
+                                <td class="worksTextCell">
+                                    <h4>Avoid the Beam(近日リリース)</h4>
+                                    <div class="tabBox worksText"><a href="">井筒ミリ</a>氏の作成したゲーム</div>
+                                    <div class="tabBox worksText">エンティティやオブジェクトの3Dモデル製作、及びステージ製作担当として参加</div>
+                                    <div class="tabBox wordsText"><a href="">Github</a>で確認可能</div>
+                                </td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr>
+                                <td class="worksImgCell" style="background-color: black;"><img class="fitImg2Cell" src="../../Images/ESSLogo.png" style="width: 100%; height:auto;"></td>
+                                <td class="verticalCellSpace"></td>
+                                <td class="worksTextCell">
+                                    <h4>神戸高専 ESS部 ウェブページ(製作中)</h4>
+                                    <div class="tabBox wordsText">2022年度に決定したESS部のホームページのリニューアルプロジェクト</div>                                    
+                                    <div class="tabBox wordsText">最新状況を<a href="">Github</a>で確認可能</div>                                    
+                                </td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr>
+                                <td class="worksImgCell"><img class="fitImg2Cell" src="../../Images/QuestionBlock.png"></td>
+                                <td class="verticalCellSpace"></td>
+                                <td class="worksTextCell">
+                                    <h4>自作  マリオのアイテム</h4>
+                                    <div class="tabBox wordsText">3Dモデリングの練習として、任天堂のマリオシリーズに出てくるアイテムを作成しました</div>                                    
+                                    
+                                </td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr>
+                                <td class="worksImgCell"><img class="fitImg2Cell" src="../../Images/ShapenedWorldSun.png"></td>
+                                <td class="verticalCellSpace"></td>
+                                <td class="worksTextCell">
+                                    <h4>Shapened World</h4>
+                                    <div class="tabBox wordsText">2019作のアート作品</div>
+                                </td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr class="horizontalCellSpace"></tr>
+                            <tr>
+                                <td class="worksImgCell"><img class="fitImg2Cell" src="../../Images/DigitalShapenedMoon.png"></td>
+                                <td class="verticalCellSpace"></td>
+                                <td class="worksTextCell">
+                                    <h4>Digitalize Shapened World</h4>
+                                    <div class="tabBox wordsText">2019作のアート作品</div>
+                                    <div class="tabBox wordsText">「Shapened World」のデジタル版</div>
+                                    </td>
+                            </tr>
+                        </div>
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div class="endTriangle"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footerText">made by Makoto Otsuka 2022</p>
+    </footer>
+
+    <script src="../../Link.js"></script>
+    <script src="../worksButton.js"></script>
+</body>
+
+</html>
