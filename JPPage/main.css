@@ -1,6 +1,12 @@
+:root{
+    --altWhite:rgb(252, 247, 241);
+    --baseColor:rgb(88, 205, 255);
+    --clearGlass:rgba(0,0,0,0);
+}
+
 body {
     margin: 0;
-    background-color: rgb(252, 247, 241);
+    background-color: var(--altWhite);
 }
 
 p {
@@ -8,13 +14,13 @@ p {
 }
 
 .NamesandOrganization {
-    position: relative;
-    margin-top: 15vw;
+    position: absolute;
+    margin-top: 10vh;
     margin-left: 15vw;
     top: 0px;
     left: 0px;
-    height: 100%;
-    width: 100%;
+    height: 30vh;
+    width: auto;
 }
 
 .nameBox {
@@ -33,10 +39,12 @@ p {
     margin: 0;
     top: 0;
     width: auto;
+    text-shadow: rgba(57, 18, 94, 0.36) 14px 5px;
 }
 
 .fakeName {
     font-size: 1.8rem;
+    font-weight: 800;
     margin: 0;
     margin-left: auto;
     right: 0;
@@ -45,7 +53,7 @@ p {
 }
 
 .organization {
-    position: relative;
+    position: relative; 
     margin: 0;
 }
 
@@ -54,7 +62,7 @@ main {
     top: 0;
     left: 0;
     margin: 0px;
-    margin-top: 15vmin;
+    margin-top: 15vh;
 }
 
 .langChangeButton {
@@ -63,10 +71,9 @@ main {
     right: 6vw;
     top: 6vh;
     background-color: rgb(255, 181, 181);
-    ;
     border-radius: 10px;
-    height: 4vmin;
-    width: 10vmin;
+    height: 40px;
+    width: 80px;
 }
 
 .lanBox {
@@ -80,10 +87,11 @@ main {
     color: rgb(15, 11, 66);
     font-size: 1.6rem;
     font-weight: bold;
+
 }
 
 .mainContentBox {
-    margin-top: 25vmin;
+    margin-top: 28vh;
     position: absolute;
     width: 100%;
     height: auto;
@@ -92,18 +100,19 @@ main {
 
 .beginTriangle {
     display: block;
-    background-image: linear-gradient(to top left, rgb(88, 205, 255) 48%, rgba(0, 0, 0, 0) 50%);
-    height: 10vmin;
+    background-image: linear-gradient(to top left, var(--baseColor) 48%, var(--clearGlass) 50%);
+    height: 12vh;
     width: 100%;
 }
 
 .mainContent {
-    padding-top: 2vmin;
-    padding-left: 5vmin;
+    padding-top: 2vh;
+    padding-left: 5vw;
+    padding-bottom: 8vh;
     position: initial;
-    width: calc(100% - 5vmin);
+    width: auto;
     height: auto;
-    background-color: rgb(88, 205, 255);
+    background-color: var(--baseColor);
     z-index: 10;
 }
 
@@ -111,19 +120,20 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2.8rem;
     margin: 0;
-    text-decoration: underline rgb(252, 247, 241);
+    text-decoration: underline var(--altWhite);
 }
 
 .tabBox {
-    margin-left: 4vmin;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .upperSpace {
-    margin-top: 2vmin;
+    margin-top: 2vh;
 }
 
 .profileBox {
-    margin-bottom: 4vmin;
+    margin-bottom: 4vh;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -134,11 +144,12 @@ h2 {
     padding: 10px;
     background-color: rgb(143, 165, 179);
     border-radius: 10px;
+    margin-bottom: 4vh;
 }
 
 .tableTop {
-    color: rgb(252, 247, 241);
-    background-color: rgba(0, 0, 0, 0);
+    color: var(--altWhite);
+    background-color: var(--clearGlass);
     font-weight: 800;
 }
 
@@ -149,7 +160,7 @@ h2 {
 .biographCell {
     padding-left: 10px;
     font-weight: 600;
-    background-color: rgb(252, 247, 241);
+    background-color: var(--altWhite);
 }
 
 .worksButtonArea {
@@ -183,7 +194,7 @@ h2 {
 }
 
 .worksImgCell {
-    background-color: rgb(252, 247, 241);
+    background-color: var(--altWhite);
     height: 100px;
     width: 140px;
     border-top-left-radius: 10px;
@@ -199,17 +210,17 @@ h2 {
 }
 
 .horizontalCellSpace {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--clearGlass);
     height: 0.1vh;
 }
 
 .verticalCellSpace {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--clearGlass);
     width: 0.2vw;
 }
 
 .worksTextCell {
-    background-color: rgb(252, 247, 241);
+    background-color: var(--altWhite);
     margin-left: 2px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -217,15 +228,13 @@ h2 {
 
 h4{
     font-size: 1.4rem;
-    margin-top: 0px;
+    margin: 0px;
     margin-left: 15px;
-    margin-bottom: 10px;
 }
 
 a{
     font-size: 1rem;
     color: rgb(15, 11, 66);
-    text-decoration: none;
 }
 
 .wordsText{
@@ -234,15 +243,15 @@ a{
 
 .endTriangle {
     display: block;
-    background-image: linear-gradient(to bottom right, rgb(88, 205, 255) 48%, rgba(0, 0, 0, 0) 50%);
-    height: 10vmin;
+    background-image: linear-gradient(to bottom right, var(--baseColor) 48%, var(--clearGlass) 50%);
+    height: 12vh;
     width: 100%;
-    margin-bottom: 8vmin;
+    margin-bottom: 8vh;
 }
 
 footer {
     position: fixed;
-    bottom: 4vmin;
+    bottom: 4vh;
     left: 50%;
     transform: translateX(-50%);
 }
