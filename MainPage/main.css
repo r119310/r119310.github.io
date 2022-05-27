@@ -1,7 +1,11 @@
 :root{
-    --altWhite:rgb(252, 247, 241);
-    --baseColor:rgb(88, 205, 255);
-    --clearGlass:rgba(0,0,0,0);
+    --altWhite:rgb(247, 236, 227);
+    --baseColor:rgb(132, 204, 238);
+    --fontColor: rgb(31, 34, 58);
+    --clearGlass:rgba(0, 0, 0, 0);
+    --nameShadow:rgba(29, 8, 48, 0.36);
+    --buttonBackColor:rgb(240, 222, 123);
+    --mainTextFont: 'Amatic SC', cursive;
 }
 
 body {
@@ -13,7 +17,64 @@ p {
     margin: 0;
 }
 
+.headerSquare{
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.sqA{
+    background-color: rgb(213, 248, 177);
+    animation: triRotate 4s infinite linear;
+}
+
+.sqB{
+    background-color: rgb(250, 210, 210);
+    animation: triRotate 4s infinite linear;
+    animation-delay: -0.8s;
+}
+
+.sqC{
+    background-color:rgb(248, 229, 179);
+    animation: triRotate 4s infinite linear;
+    animation-delay: -1.6s;
+}
+
+.sqD{
+    background-color: rgb(197, 186, 248);
+    animation: triRotate 4s infinite linear;
+    animation-delay: -2.4s;
+}
+
+@keyframes triRotate {
+    0%{transform: translateX(-15vw)}
+    100% {transform: translateX(85vw) rotate(720deg);}
+}
+
+.bigSquare{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10vw;
+    height: 50vh;
+    padding-left: 2px;
+    background-color: cornflowerblue;
+}
+
+
+.bigTriangle{
+    position: absolute;
+    top: -20vh;
+    right: 10vw;
+    width: 10vw;
+    height: 70vh;
+    background-image: linear-gradient(to top left, cornflowerblue 49%, var(--clearGlass) 50%);
+}
+
 .NamesandOrganization {
+    font-family: var(--mainTextFont);
     position: absolute;
     margin-top: 10vh;
     margin-left: 15vw;
@@ -30,27 +91,51 @@ p {
     margin: 0;
 }
 
-.realName {
+.realNameJP {
     position: relative;
-    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    font-family: 'Kosugi Maru', sans-serif;
     font-weight: 800;
-    color: rgb(15, 11, 66);
+    color: var(--fontColor);
     margin: 0;
     top: 0;
     width: auto;
 }
 
 @media (min-width:751px) {
-    .realName {
+    .realNameJP {
         font-size: 10rem;
-        text-shadow: rgba(57, 18, 94, 0.36) 14px 5px;
+        text-shadow: var(--nameShadow) 14px 5px;
     }
 }
 
 @media (max-width:750px){
-    .realName{
+    .realNameJP{
         font-size: 4rem;
-        text-shadow: rgba(57, 18, 94, 0.36) 7px 5px;
+        text-shadow: var(--nameShadow) 7px 5px;
+    }
+}
+
+.realNameEN{
+    position: relative;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-weight: 800;
+    color: var(--fontColor);
+    margin: 0;
+    top: 0;
+    width: auto;
+}
+
+@media (min-width:751px) {
+    .realNameEN {
+        font-size: 7.5rem;
+        text-shadow: var(--nameShadow) 14px 5px;
+    }
+}
+
+@media (max-width:750px){
+    .realNameEN {
+        font-size: 3.5rem;
+        text-shadow: var(--nameShadow) 7px 5px;
     }
 }
 
@@ -70,7 +155,7 @@ p {
 }
 
 main {
-    color: rgb(15, 11, 66);
+    color: var(--fontColor);
     top: 0;
     left: 0;
     margin: 0px;
@@ -82,7 +167,7 @@ main {
     position: fixed;
     right: 6vw;
     top: 6vh;
-    background-color: rgb(255, 181, 181);
+    background-color: var(--buttonBackColor);
     border-radius: 10px;
     height: 40px;
     width: 80px;
@@ -96,7 +181,7 @@ main {
 }
 
 .langText {
-    color: rgb(15, 11, 66);
+    color: var(--fontColor);
     font-size: 1.6rem;
     font-weight: bold;
 
@@ -123,7 +208,7 @@ main {
 
 .beginTriangle {
     display: block;
-    background-image: linear-gradient(to top left, var(--baseColor) 48%, var(--clearGlass) 50%);
+    background-image: linear-gradient(to top left, var(--baseColor) 49%, var(--clearGlass) 50%);
     height: 12vh;
     width: 100%;
 }
@@ -140,10 +225,17 @@ main {
 }
 
 h2 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--mainTextFont);
     font-size: 2.8rem;
     margin: 0;
     text-decoration: underline var(--altWhite);
+    text-decoration-thickness: 8px;
+}
+
+@media (max-width:300px){
+    h2{
+    font-size: 2rem;
+    }
 }
 
 .tabBox {
@@ -242,7 +334,8 @@ h2 {
 .worksButton {
     height: 100%;
     width: 80px;
-    background-color: rgba(255, 181, 181, 0.85);
+    background-color: var(--buttonBackColor);
+    opacity: 0.85;
     margin-left: 10px;
     border-radius: 10px;
     border: 3px rgba(0, 0, 0, 0.35) solid;
@@ -251,7 +344,7 @@ h2 {
 }
 
 .selectedWorksButton {
-    background-color: rgb(255, 181, 181);
+    opacity: 1;
     border-color: rgb(0, 0, 0);
     font-weight: 800;
 }
@@ -295,6 +388,7 @@ h2 {
 }
 
 h4{
+    font-family: var(--mainTextFont);
     font-size: 1.4rem;
     margin: 0px;
     margin-left: 15px;
@@ -302,7 +396,10 @@ h4{
 
 a{
     font-size: 1rem;
-    color: rgb(15, 11, 66);
+    font-weight: 600;
+    color: var(--fontColor);
+    text-decoration-color: rgb(51, 13, 13);
+    text-decoration-thickness: 3px;
 }
 
 .wordsText{
@@ -320,6 +417,6 @@ a{
 footer {
     position: fixed;
     bottom: 4vh;
-    width: 100%;
+    width: 100vw;
     text-align: center;
 }
