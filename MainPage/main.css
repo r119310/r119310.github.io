@@ -1,14 +1,15 @@
-:root{
-    --altWhite:rgb(247, 236, 227);
-    --baseColor:rgb(132, 204, 238);
+:root {
+    --altWhite: rgb(247, 236, 227);
+    --baseColor: rgb(132, 204, 238);
     --fontColor: rgb(31, 34, 58);
-    --clearGlass:rgba(0, 0, 0, 0);
-    --nameShadow:rgba(29, 8, 48, 0.36);
-    --buttonBackColor:rgb(240, 222, 123);
+    --clearGlass: rgba(0, 0, 0, 0);
+    --nameShadow: rgba(29, 8, 48, 0.36);
+    --buttonBackColor: rgb(240, 222, 123);
     --mainTextFont: 'Amatic SC', cursive;
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     background-color: var(--altWhite);
 }
@@ -17,7 +18,7 @@ p {
     margin: 0;
 }
 
-.headerSquare{
+.headerSquare {
     position: absolute;
     top: 0;
     height: 10vh;
@@ -25,49 +26,54 @@ p {
     border-radius: 50%;
 }
 
-.sqA{
+.sqA {
     background-color: rgb(213, 248, 177);
     animation: triRotate 4s infinite linear;
 }
 
-.sqB{
+.sqB {
     background-color: rgb(250, 210, 210);
     animation: triRotate 4s infinite linear;
     animation-delay: -0.8s;
 }
 
-.sqC{
-    background-color:rgb(248, 229, 179);
+.sqC {
+    background-color: rgb(248, 229, 179);
     animation: triRotate 4s infinite linear;
     animation-delay: -1.6s;
 }
 
-.sqD{
+.sqD {
     background-color: rgb(197, 186, 248);
     animation: triRotate 4s infinite linear;
     animation-delay: -2.4s;
 }
 
 @keyframes triRotate {
-    0%{transform: translateX(-15vw)}
-    100% {transform: translateX(85vw) rotate(720deg);}
+    0% {
+        transform: translateX(calc(-1*10vh*1.73));
+        -webkit-transform: translateX(calc(-1*10vh*1.73));
+    }
+    100% {
+        transform: translateX(calc(100vw) rotate(720deg));
+        -webkit-transform: translateX(100vw) rotate(720deg);
+    }
 }
 
-.bigSquare{
+.bigSquare {
     position: absolute;
     top: 0;
     right: 0;
-    width: 10vw;
-    height: 50vh;
+    width: 20vw;
+    height: 60vh;
     padding-left: 2px;
     background-color: cornflowerblue;
 }
 
-
-.bigTriangle{
+.bigTriangle {
     position: absolute;
-    top: -20vh;
-    right: 10vw;
+    top: -10vh;
+    right: 20vw;
     width: 10vw;
     height: 70vh;
     background-image: linear-gradient(to top left, cornflowerblue 49%, var(--clearGlass) 50%);
@@ -109,20 +115,20 @@ p {
 }
 
 @media (max-width:810px) and (min-width:751px) {
-    .realNameJP{
-    font-size: 6rem;
-    text-shadow: var(--nameShadow) 14px 5px;
+    .realNameJP {
+        font-size: 6rem;
+        text-shadow: var(--nameShadow) 14px 5px;
     }
 }
 
-@media (max-width:750px){
-    .realNameJP{
+@media (max-width:750px) {
+    .realNameJP {
         font-size: 4rem;
         text-shadow: var(--nameShadow) 7px 5px;
     }
 }
 
-.realNameEN{
+.realNameEN {
     position: relative;
     font-family: 'Kosugi Maru', sans-serif;
     font-weight: 800;
@@ -140,9 +146,9 @@ p {
 }
 
 @media (max-width:1350px) and (min-width:951px) {
-    .realNameEN{
-    font-size: 5rem;
-    text-shadow: var(--nameShadow) 14px 5px;
+    .realNameEN {
+        font-size: 5rem;
+        text-shadow: var(--nameShadow) 14px 5px;
     }
 }
 
@@ -169,10 +175,9 @@ p {
 }
 
 @media (max-width:400px) {
-    .organization{
+    .organization {
         opacity: 0;
     }
-    
 }
 
 .fakeName {
@@ -186,7 +191,7 @@ p {
 }
 
 .organization {
-    position: relative; 
+    position: relative;
     margin: 0;
 }
 
@@ -198,10 +203,12 @@ p {
     background-color: var(--buttonBackColor);
     border-radius: 10px;
     height: 80px;
+    max-height: 10vw;
     width: 80px;
+    max-width: 10vw;
 }
 
-.SNSIcon{
+.SNSIcon {
     position: relative;
     height: 90%;
     width: auto;
@@ -238,7 +245,6 @@ main {
     color: var(--fontColor);
     font-size: 1.6rem;
     font-weight: bold;
-
 }
 
 .mainContentBox {
@@ -248,19 +254,20 @@ main {
     z-index: 100;
 }
 
-@media (min-width:751px){
-    .mainContentBox{
+@media (min-width:751px) {
+    .mainContentBox {
         margin-top: 28vh;
     }
 }
 
-@media (max-width:750px){
-    .mainContentBox{
+@media (max-width:750px) {
+    .mainContentBox {
         margin-top: 20vh;
     }
 }
 
 .beginTriangle {
+    margin-top: 40px;
     display: block;
     background-image: linear-gradient(to top left, var(--baseColor) 49%, var(--clearGlass) 50%);
     height: 12vh;
@@ -286,9 +293,9 @@ h2 {
     text-decoration-thickness: 8px;
 }
 
-@media (max-width:300px){
-    h2{
-    font-size: 2rem;
+@media (max-width:300px) {
+    h2 {
+        font-size: 2rem;
     }
 }
 
@@ -307,33 +314,30 @@ h2 {
     font-weight: 600;
 }
 
-.profile{
+.profile {
     display: grid;
 }
 
-@media (min-width:751px){
-    .profile{
+@media (min-width:751px) {
+    .profile {
         grid-template-columns: 3fr 10px 10fr;
     }
 }
 
-@media (max-width:750px){
-    .profile{
+@media (max-width:750px) {
+    .profile {
         grid-template-columns: repeat(5, 1fr);
     }
-
-    .profileTopic{
+    .profileTopic {
         grid-column-start: 1;
         grid-column-end: 6;
     }
-
-    .profileColon{
+    .profileColon {
         grid-column-start: 1;
         grid-column-end: 2;
         opacity: 0;
     }
-
-    .profileContext{
+    .profileContext {
         grid-column-start: 2;
         grid-column-end: 6;
     }
@@ -370,15 +374,16 @@ h2 {
     display: flex;
 }
 
-@media (min-width:751px){
-    .worksButtonArea{
+@media (min-width:751px) {
+    .worksButtonArea {
         float: right;
-        margin-right:20vw;
+        margin-right: 20vw;
     }
 }
 
-@media (max-width:750px){
-    .worksButtonArea{
+@media (max-width:750px) {
+    .worksButtonArea {
+        margin-top: 2vh;
         margin-left: 2vw;
         width: 80%;
         position: relative;
@@ -416,12 +421,12 @@ h2 {
     border-bottom-left-radius: 10px;
 }
 
-.fitImg2Cell{
+.fitImg2Cell {
     display: flex;
     margin: auto;
     height: 90%;
     width: auto;
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 .horizontalCellSpace {
@@ -441,14 +446,14 @@ h2 {
     border-bottom-right-radius: 10px;
 }
 
-h4{
+h4 {
     font-family: var(--mainTextFont);
     font-size: 1.4rem;
     margin: 0px;
     margin-left: 15px;
 }
 
-a{
+a {
     font-size: 1rem;
     font-weight: 600;
     color: var(--fontColor);
@@ -456,7 +461,7 @@ a{
     text-decoration-thickness: 3px;
 }
 
-.wordsText{
+.wordsText {
     font-size: 1rem;
 }
 
