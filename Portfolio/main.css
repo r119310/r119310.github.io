@@ -9,13 +9,14 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x:hidden;
     margin: 0;
     background-color: var(--altWhite);
 }
 
 p {
     margin: 0;
+    margin-right: 30px;
 }
 
 #loading{
@@ -267,14 +268,25 @@ p {
 .SNS {
     text-align: center;
     position: fixed;
-    right: 6vw;
-    top: 12vh;
+    top: 12.5vh;
     background-color: var(--buttonBackColor);
     border-radius: 10px;
     height: 80px;
     max-height: 10vw;
     width: 80px;
     max-width: 10vw;
+}
+
+@media (min-width:901px){
+    .SNS{
+        right: 6vw;
+    }
+}
+
+@media (max-width:900px){
+    .SNS{
+        left: 80vw;
+    }
 }
 
 .SNSIcon {
@@ -295,12 +307,23 @@ main {
 .langChangeButton {
     text-align: center;
     position: fixed;
-    right: 6vw;
     top: 6vh;
     background-color: var(--buttonBackColor);
     border-radius: 10px;
     height: 40px;
     width: 80px;
+}
+
+@media (min-width:901px){
+    .langChangeButton{
+        right: 6vw;
+    }
+}
+
+@media (max-width:900px){
+    .langChangeButton{
+        left: 70vw;
+    }
 }
 
 .lanBox {
