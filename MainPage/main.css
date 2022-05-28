@@ -18,6 +18,75 @@ p {
     margin: 0;
 }
 
+#loading{
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 110;
+    background-color: var(--baseColor);
+}
+
+.startAnimeBox{
+    margin: auto;
+    width: 40%;
+    height: 30%;
+    display: flex;
+}
+
+.loadingCircle{
+    margin: auto;
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.circlA{
+    background-color: rgb(213, 248, 177);
+    animation: upDownCircle 4s infinite linear;
+}
+
+.circlB{
+    background-color: rgb(250, 210, 210);
+    animation: upDownCircle 4s infinite linear;
+    animation-delay: -3.2s;
+}
+
+.circlC{
+    background-color: rgb(248, 229, 179);
+    animation: upDownCircle 4s infinite linear;
+    animation-delay: -2.4s;
+}
+
+.circlD{
+    background-color: rgb(197, 186, 248);
+    animation: upDownCircle 4s infinite linear;
+    animation-delay: -1.6s;
+}
+
+@keyframes upDownCircle{
+    0%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10vh);
+        -webkit-transform: translateY(-10vh);
+    }
+    100%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
 .headerSquare {
     position: absolute;
     top: 0;
