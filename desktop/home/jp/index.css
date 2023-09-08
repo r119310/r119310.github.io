@@ -1,7 +1,16 @@
 :root {
+    --clear: #ffffff00;
     --portWhite: #fffbfb;
+    --portLightGray: #efefef;
     --portBGclr: #c9daf8;
+    --portFontClr:#060523;
     --circleShadow: rgba(29, 8, 48, 0.36);
+    --popingPink:#fad2d2;
+    --popingOrange:#ffe5cf;
+    --popingYellow:#faf3d3;
+    --popingLime:#d5f8b1;
+    --popingSky:#bae9ff;
+    --popingViolet:#c5baf8;
 }
 
 body {
@@ -13,25 +22,174 @@ body {
     background-color: var(--portBGclr);
 }
 
+main{
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+.GTpage{
+    margin-top: 5%;
+    color: var(--portFontClr);
+    font-size: 370rem;
+    font-family: 'Shrikhand', cursive;
+    height: 30%;
+    text-decoration: none;
+    z-index: 1000;
+}
+.buttonWords{
+    margin-top: 5%;
+    color: var(--portFontClr);
+    font-size: 8vw;
+    font-family: 'Shrikhand', cursive;
+    height: 30%;
+    text-decoration: none;
+    transform: rotate(45deg);
+}
+
 .lower-circle{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 93vh;
-    height: 93vh;
-    max-width: 93vw;
-    max-height: 93vw;
+    width: 95vmin;
+    height: 95vmin;
     border-radius: 50%;
     margin: auto;
-    background-color: #efefef;
+    background-color: var(--portLightGray);
     box-shadow: 0 10px 25px 0 var(--circleShadow);
 }
 
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.fan-tile{
+    width: 89vmin;
+    height: 89vmin;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    /* animation: rotate 15s linear infinite; */
+}
+
+.fan{
+    background-color: var(--popingPink);
+    position: absolute;
+    transform-origin: 100% 100%;
+    width: 50%;
+    height: 50%;
+    /* left: 50%;
+    top: 50%; */
+    /* margin-top: -5000px
+    margin-left: -5000px */
+}
+
+.Play-fan{
+    top: calc(-89vmin*1);
+    display: flex;
+    justify-content: center;
+    align-items: Top;
+    position: relative;
+    width: 89vmin;
+    height: 89vmin;
+    margin: auto;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--popingYellow) 0deg 26deg, var(--clear) 26deg 334deg, var(--popingYellow) 334deg 360deg);
+    transform: rotate(60deg);
+}
+
+.Works-fan{
+    top: calc(-89vmin*2);
+    display: flex;
+    justify-content: center;
+    align-items: Top;
+    position: relative;
+    width: 89vmin;
+    height: 89vmin;
+    margin: auto;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--popingOrange) 0deg 26deg, var(--clear) 26deg 334deg, var(--popingOrange) 334deg 360deg);
+    transform: rotate(120deg);
+}
+
+.News-fan{
+    top: calc(-89vmin*3);
+    display: flex;
+    justify-content: center;
+    align-items: Top;
+    position: relative;
+    width: 89vmin;
+    height: 89vmin;
+    margin: auto;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--popingLime) 0deg 26deg, var(--clear) 26deg 334deg, var(--popingLime) 334deg 360deg);
+    transform: rotate(180deg);
+}
+
+.Contact-fan{
+    top: calc(-89vmin*4);
+    display: flex;
+    justify-content: center;
+    align-items: Top;
+    position: relative;
+    width: 89vmin;
+    height: 89vmin;
+    margin: auto;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--popingSky) 0deg 26deg, var(--clear) 26deg 334deg, var(--popingSky) 334deg 360deg);
+    transform: rotate(240deg);
+}
+
+.Biography-fan{
+    top: calc(-89vmin*5);
+    display: flex;
+    justify-content: center;
+    align-items: Top;
+    position: relative;
+    width: 89vmin;
+    height: 89vmin;
+    margin: auto;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--popingViolet) 0deg 26deg, var(--clear) 26deg 334deg, var(--popingViolet) 334deg 360deg);
+    transform: rotate(300deg);
+}
+
 .upper-circle{
-    width: 60%;
-    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 56vh;
+    height: 56vh;
+    max-width: 56vw;
+    max-height: 56vw;
     border-radius: 50%;
     margin: auto;
-    background-color: #efefef;
+    background-color: var(--portLightGray);
     box-shadow: 0 10px 25px 0 var(--circleShadow);
+}
+
+.Initial{
+    font-size: 300%;
+    margin-right: 10px;
+    transform: rotate(270deg);
+}
+
+h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto 0;
+    color: var(--portFontClr);
+    font-size: 250%;
+    font-family: 'Abril Fatface', cursive;
 }
