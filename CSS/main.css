@@ -9,6 +9,10 @@ main{
     width: auto;
     height: 300vh;
     /* background-color: brown; */
-    margin: 0;
-    /* margin-top: 5em; */
+    max-width: 70vw;
+    margin: auto;
+    margin-top: 6em;
+    /* margin-left: 8em;
+    margin-right: 8em; */
+    overflow-wrap: break-word;
 }
