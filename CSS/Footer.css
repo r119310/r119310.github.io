@@ -15,7 +15,7 @@ footer{
     font-weight: bold;
 }
 
-@media (min-width:1px) and (max-width:999px) {
+@media (min-width:1px) and (max-width:799px) {
     footer{
         margin-left: 0px;
         margin-right: 0px;

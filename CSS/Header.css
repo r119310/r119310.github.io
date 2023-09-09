@@ -5,7 +5,7 @@
   --creamCLR: #fffdfc;
 }
 
-@media (min-width:1000px) {
+@media (min-width:800px) {
     header{
         top: 0;
         left: 0;
@@ -63,6 +63,38 @@
       transition: transform 2s, background-color 0.2s, box-shadow 0.2s;
     }
 
+    .EN2JP{
+      min-width: 6rem;
+      text-align: center;
+    }
+
+    .EN2JP::before{
+      content: "English";
+      transition: opacity 0.5s ease;
+    }
+
+    .EN2JP:hover::before{
+      content: "日本語";
+      opacity: 1;
+      transition: opacity 0.8s ease;
+    }
+
+    .JP2EN{
+      min-width: 6rem;
+      text-align: center;
+    }
+
+    .JP2EN::before{
+      content: "日本語";
+      transition: opacity 0.5s ease;
+    }
+
+    .JP2EN:hover::before{
+      content: "English";
+      opacity: 1;
+      transition: opacity 0.8s ease;
+    }
+
     .nav-item:hover{
       /* background-color: var(--creamCLR); */
       box-shadow: 0px 0px 6px #abcdef;      
@@ -104,7 +136,7 @@
     }
 }
 
-@media (min-width:1px) and (max-width:999px) {
+@media (min-width:1px) and (max-width:799px) {
     header{
         top: 0;
         left: 0;

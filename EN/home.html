@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/Header.css">
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
-    <title>🏠Home | Makoto Otsuka</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Footer.css">
+    <title>Home | Makoto Otsuka</title>
 </head>
 
 <body>
@@ -16,9 +17,9 @@
                 <div class="nav-list">
                     <div class="nav-item"><div class="nav-item-text" onclick="homeENLink()">Home</div></div>
                     <div class="nav-item"><div class="nav-item-text" onclick="profileENLink()">Profile</div></div>
-                    <div class="nav-item"><div class="nav-item-text" onclick="newsENLink()">News</div></div>
+                    <!-- <div class="nav-item"><div class="nav-item-text" onclick="newsJPLink()">News</div></div> -->
                     <!-- <div class="nav-item"><div class="nav-item-text" onclick="Mac020kLink()">Fun</div></div> -->
-                    <div class="nav-item"><div class="nav-item-text" onclick="homeJPLink()">日本語</div></div>
+                    <div class="nav-item"><div class="nav-item-text EN2JP" onclick="homeJPLink()"></div></div>
                 </div>
             </nav>
         </div> 
@@ -34,8 +35,42 @@
     </header>
 
     <main>
-        on reconstruction
+        <div class="discription">
+            <!-- <div class="selfPict">
+                写真挿入予定
+            </div> -->
+            <div>
+                <div class="MainName">
+                    Makoto Otsuka
+                </div>
+                <div class="SubName">
+                    大塚 晟
+                </div>
+                <div class="currentPosition">
+                    <span>Kobe City College of Technology(KCCT)</span> <span>Department of Electronics Senior</span>
+                </div>
+                <p><span>Major : </span>Human Computer Interaction</p>
+                <p><span class="link" onclick="homeENLink()">日本語ページへ</span></p>
+            </div>
+        </div>
+
+        <div class="AboutMe">
+            <h1>About Me</h1>
+            <p class="text">Born in 2004、from Kobe Hyogo.Entered in Department of Electronics of KCCT in 2019、assumed to graduate in March 2023. Entering Electric and Electronic Major of KCCT in April 2023.<div class="link text" onclick="profileJPLink()">>>>Details</div></p>
+        </div>
+
+        <!-- <div class="NewsPreview">
+            <h1>News</h1>
+
+        </div> -->   
+        
     </main>
+
+    <footer>
+        <div class="footertext">
+            © Makoto Otsuka 2023
+        </div>
+    </footer>
     
     <script src="../CSS/Link.js"></script>
 </body>
