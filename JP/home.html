@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/Header.css">
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
-    <title>🏠Home | Makoto Otsuka</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Footer.css">
+    <title>Home | 大塚 晟</title>
 </head>
 
 <body>
@@ -14,8 +15,9 @@
         <div class="nav-wrapper">
                 <nav class="header-nav">
                 <div class="nav-list">
-                    <div class="nav-item"><div class="nav-item-text" onclick="aboutJPLink()">About Me</div></div>
-                    <div class="nav-item"><div class="nav-item-text" onclick="newsJPLink()">News</div></div>
+                    <div class="nav-item"><div class="nav-item-text" onclick="homeJPLink()">Home</div></div>
+                    <div class="nav-item"><div class="nav-item-text" onclick="profileJPLink()">Profile</div></div>
+                    <!-- <div class="nav-item"><div class="nav-item-text" onclick="newsJPLink()">News</div></div> -->
                     <!-- <div class="nav-item"><div class="nav-item-text" onclick="Mac020kLink()">Fun</div></div> -->
                     <div class="nav-item"><div class="nav-item-text" onclick="homeENLink()">English</div></div>
                 </div>
@@ -33,8 +35,42 @@
     </header>
 
     <main>
-        再構築なうaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        <div class="discription">
+            <!-- <div class="selfPict">
+                写真挿入予定
+            </div> -->
+            <div>
+                <div class="MainName">
+                    大塚 晟
+                </div>
+                <div class="SubName">
+                    Otsuka Makoto
+                </div>
+                <div class="currentPosition">
+                    <span>神戸市立工業高等専門学校</span> <span>電子工学科 5年</span>
+                </div>
+                <p><span>分野 : </span><span>ヒューマン</span><span>コンピュータ</span><span>インタラクション</span></p>
+                <p>Go to the <span class="link" onclick="homeENLink()">English Page</span></p>
+            </div>
+        </div>
+
+        <div class="AboutMe">
+            <h1>About Me</h1>
+            <p class="text">2004年生まれ、兵庫県神戸市出身。2019年神戸市立工業高等専門学校 電子工学科に入学、2024年3月卒業予定。同年4月より神戸市立工業高等専門学校 電気電子工学専攻 入学予定。<div class="link text" onclick="profileJPLink()">>>>詳細</div></p>
+        </div>
+
+        <!-- <div class="NewsPreview">
+            <h1>News</h1>
+
+        </div> -->   
+        
     </main>
+
+    <footer>
+        <div class="footertext">
+            © Makoto Otsuka 2023
+        </div>
+    </footer>
     
     <script src="../CSS/Link.js"></script>
 </body>

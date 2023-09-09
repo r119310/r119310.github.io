@@ -2,8 +2,8 @@ function homeJPLink() {
     window.location.href = "https://r119310.github.io/JP/home.html";
 }
 
-function aboutJPLink() {
-    window.location.href = "https://r119310.github.io/JP/about.html";
+function profileJPLink() {
+    window.location.href = "https://r119310.github.io/JP/profile.html";
 }
 
 function newsJPLink() {
@@ -14,12 +14,16 @@ function Mac020kLink() {
     window.location.href = "";
 }
 
+function industEikenLink(){
+    window.location.href = "";
+}
+
 function homeENLink() {
     window.location.href = "https://r119310.github.io/EN/home.html";
 }
 
-function aboutENLink() {
-    window.location.href = "https://r119310.github.io/EN/about.html";
+function profileENLink() {
+    window.location.href = "https://r119310.github.io/EN/profile.html";
 }
 
 function newsJPLink() {

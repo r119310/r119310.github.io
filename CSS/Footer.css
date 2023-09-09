@@ -1,0 +1,23 @@
+footer{
+    position: relative;
+    bottom: 0px;
+    width: auto;
+    height: 2vh;
+    text-align: center;
+    border-top: 2px solid var(--borderCLR);
+    margin: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+.footertext{
+    margin:0.5em;
+    font-weight: bold;
+}
+
+@media (min-width:1px) and (max-width:999px) {
+    footer{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
