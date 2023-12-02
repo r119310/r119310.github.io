@@ -1,5 +1,5 @@
 function homeJPLink() {
-    window.location.href = "https://r119310.github.io/JP/home.html";
+    window.location.href = "https://r119310.github.io/EN/home.html";
 }
 
 function profileJPLink() {
@@ -15,7 +15,7 @@ function Mac020kLink() {
 }
 
 function industEikenLink(){
-    window.location.href = "";
+    window.location.href = "https://www.kobe-kosen.ac.jp/dayori/2019/dayori201907.html#190722kougyoueiken";
 }
 
 function homeENLink() {
