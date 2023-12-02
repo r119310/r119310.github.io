@@ -1,5 +1,5 @@
 function homeJPLink() {
-    window.location.href = "https://r119310.github.io/EN/home.html";
+    window.location.href = "https://r119310.github.io/JP/home.html";
 }
 
 function profileJPLink() {
