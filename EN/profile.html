@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="content-language" content="ja">
+    <meta name="keywords" content="Otsuka,Makoto,homepage,hp,">
+    <meta name="author" content="© 2024 Makoto Otsuka">
+    <link rel="icon" type="image/png" sizes="128x128" href="/./Images/r119310_icon_128x128.png">
+    <link rel="shortcut icon" href="../Images/r119310_icon_BGwhite.svg">
     <link rel="stylesheet" type="text/css" href="../CSS/Header.css">
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
     <link rel="stylesheet" type="text/css" href="../CSS/Footer.css">
@@ -19,7 +24,7 @@
                     <div class="nav-item"><div class="nav-item-text" onclick="profileENLink()">Profile</div></div>
                     <!-- <div class="nav-item"><div class="nav-item-text" onclick="newsJPLink()">News</div></div> -->
                     <!-- <div class="nav-item"><div class="nav-item-text" onclick="Mac020kLink()">Fun</div></div> -->
-                    <div class="nav-item"><div class="nav-item-text EN2JP" onclick="profileJPLink()"></div></div>
+                    <div class="nav-item"><div class="nav-item-text EN2JP" onclick="profileJPLink()">日本語</div></div>
                 </div>
             </nav>
         </div> 
@@ -35,74 +40,147 @@
     </header>
 
     <main>
+        <div class="discription">            
+            <div class="selfPictArea">
+                <img src="../Images/Self.JPG" class="selfPict">
+            </div>
+            <div>
+                <div class="MainName">
+                    Makoto Otsuka
+                </div>
+                <div class="SubName">
+                    大塚 晟
+                </div>
+                <div class="currentPosition">
+                    <span>Kobe City College of Technology(KCCT)</span> <span>Department of Electronics 5th Year</span>
+                </div>
+                <p><span>Major : </span> <span>Electronics</span></p>
+                <p><span>Topics : </span> <span>HCI</span></p>
+                <p><span>Hobby : </span> <span>EDM</span></p>
+                <p><span class="link" onclick="homeJPLink()">日本語ページへ</span></p>
+                <div class="linkbox">
+                    <img src="../Images/twitter.svg" class="linkIcon" onclick="twitterLink()">
+                    <img src="../Images/GitHub-Mark-64px.png" class="linkIcon"  onclick="githubLink()">
+                    <img src="../Images/SAI_ロゴ.png" class="linkIcon" onclick="SAIHPLink()">
+                </div>
+            </div>
+        </div>
+
         <h1>Profile</h1>
-            <p>Born in 2004、from Kobe Hyogo.Entered in Department of Electronics of KCCT in 2019、assumed to graduate in March 2023. Entering Electric and Electronic Major of KCCT in April 2023.</p>
+        <div class="textbox">
+            <p>Born in 2004、from Kobe Hyogo.</p>
+            <p>Entered in Department of Electronics of KCCT in 2019、assumed to graduate in March 2024.</p>
+            <p> Entering Electric and Electronic Major of KCCT in April 2023.</p>
+            <p>Lived in the US during childhood - English level : Eiken Pre 1, TOEIC 915</p>
+            <div class="link text" onclick="profileJPLink()">>>>Details</div>
+        </div>
+
+        <div class="Skills">
+            <h1>Skills</h1>
+            <p class="textbox">
+                <span>C</span>  <span>Python</span>  <span>LaTeX</span> <span>HTML</span>  <span>CSS</span>  <span>Processing</span> <span>Japanese/English Translation</span>
+            </p>
+        </div>
         
-        <h1>Education</h1>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>2019/03 - present</td>
-                        <td>Department of Electronics of Kobe City College of Technology</td>
-                    </tr>
-                    <tr>
-                        <td>2024/04 - (Upcoming)</td>
-                        <td>Electrical and Electronic Engineering Advanced Course of Kobe City College of Technology</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h1>BIO</h1>
+        <div class="textbox">
+            <div class="tbl">
+                <div class="tblRow tblTop"></div>
+                <div class="tblRow">
+                    <div class="tblLeft">2004/03</div>
+                    <div class="tblRight">Birth</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2007/03 - 2011/12</div>
+                    <div class="tblRight">Lived in U.S.</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2019/03 - present</div>
+                    <div class="tblRight">Department of Electronics of Kobe City College of Technology</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2024/04 - (Assumed)</div>
+                    <div class="tblRight">Electrical and Electronic Engineering Advanced Course of Kobe City College of Technology</div>
+                </div>
+            </div>
+        </div>
 
         <h1>Qualifications</h1>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>2017/03</td>
-                        <td>The EIKEN Test in Practical English Proficiency Pre-1 grade Passed</td>
-                    </tr>
-                    <tr>
-                        <td>2019/06</td>
-                        <td>119th English Technical Writing Test 4th grade passed & <span class="link" onclick="industEikenLink()">Awarded the The Minister of Education, Culture, Sports, Science and Technology Award of Japan</span></td>
-                    </tr>
-                    <tr>
-                        <td>2019/12</td>
-                        <td>121th English Technical Writing Test 3th grade passed</td>
-                    </tr>                    
-                    <tr>
-                        <td>2022/06</td>
-                        <td>Scored TOEIC 915</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="textbox">
+            <div class="tbl">
+                <div class="tblRow tblTop"></div>
+                <div class="tblRow">
+                    <div class="tblLeft">2017/03</div>
+                    <div class="tblRight">The EIKEN Test in Practical English Proficiency Pre-1 grade Passed</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2019/06</div>
+                    <div class="tblRight">119th English Technical Writing Test 4th grade passed & <span class="link" onclick="industEikenLink()">Awarded the The Minister of Education, Culture, Sports, Science and Technology Award of Japan</span></div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2019/12</div>
+                    <div class="tblRight">121th English Technical Writing Test 3th grade passed</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2022/06</div>
+                    <div class="tblRight">Scored TOEIC 915</div>
+                </div>
+                </div>
+            </div>
         
-        <h1>Achievements</h1>
-        <table>
-            <tbody>
-                <tr>
-                    <td>2019/06</td>
-                    <td>Awarded in 119th English Technical Writing Test 4th grade for <span class="link" onclick="industEikenLink()">The Minister of Education, Culture, Sports, Science and Technology Award of Japan</span></td>
-                </tr>
-                <tr>
-                    <td>2021/03</td>
-                    <td>Finished the Columbia Business School Venture for All Program</td>
-                </tr>
-                <tr>
-                    <td>2022/11</td>
-                    <td>3rd in the 16th Presentation Contest for Kosen students in Kinki Area</td>
-                </tr>
-                <tr>
-                    <td>2022/12</td>
-                    <td>Grand Prize at KOSEN BIZトレ</td>
-                </tr>
-                <tr>
-                    <td>2023/10</td>
-                    <td>5th place & Best Presentation Award in Techno-Ocean 2023 Underwater Robot Competition AUV divition</td>
-                </tr>
-                <tr>
-                    <td>2023/11</td>
-                    <td>2nd place in the 17th National College of Technology English Presentation Contest Kinki Qualification Tournament</td>
-                </tr>
-            </tbody>
-        </table>
+        <h1>Achievements・Awards</h1>
+        <div class="textbox">
+            <div class="tbl">
+                <div class="tblRow tblTop"></div>
+                <div class="tblRow">
+                    <div class="tblLeft">2019/06</div>
+                    <div class="tblRight">Awarded in 119th English Technical Writing Test 4th grade for <span class="link" onclick="industEikenLink()">The Minister of Education, Culture, Sports, Science and Technology Award of Japan</span></div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2021/03</div>
+                    <div class="tblRight">Finished the Columbia Business School Venture for All Program</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2022/11</div>
+                    <div class="tblRight">3rd in the 16th Presentation Contest for Kosen students in Kinki Area</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2022/12</div>
+                    <div class="tblRight">Grand Prize at KOSEN BIZトレ</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2023/10</div>
+                    <div class="tblRight">5th place & Best Presentation Award in Techno-Ocean 2023 Underwater Robot Competition AUV divition</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2023/11</div>
+                    <div class="tblRight">2nd place in the 17th National College of Technology English Presentation Contest Kinki Qualification Tournament</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2024/01</div>
+                    <div class="tblRight">2nd place in KCCT school English Presentation Contest</div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2024/01</div>
+                    <div class="tblRight"><span>Participated in the 17th National College of Technology English Presentation Contest National Tournament</div>
+                </div>
+            </div>
+        </div>
+
+        <h1>Research</h1>
+        <div class="textbox">
+            <div class="tbl">
+                <div class="tblRow tblTop"></div>
+                <div class="tblRow">
+                    <div class="tblLeft">2024/02</div>
+                    <div class="tblRight">Graduation Paper, Ear Wiggle Detection in Glasses-Shaped Devices<br><span class="link" onclick="Thesis2023Link()">Available in Japanese</span></div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2024/03</div>
+                    <div class="tblRight"><span>Interaction2024</span> <span>Demo & Poster</span> <span>(3A09) Ear Wiggle Detection in Glasses-Shaped Devices</span><br><span class="link" onclick="Interaction2024Link()">Available in Japanese</span></div>
+                </div>
+            </div>
+        </div>
 
         <!-- <h1>Projects</h1> -->
     </main>

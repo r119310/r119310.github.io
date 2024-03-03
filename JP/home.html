@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="content-language" content="ja">
+    <meta name="keywords" content="大塚,晟,ホームページ,hp,">
+    <meta name="author" content="© 2024 Makoto Otsuka">
+    <link rel="icon" type="image/png" sizes="128x128" href="/./Images/r119310_icon_128x128.png">
+    <link rel="shortcut icon" href="../Images/r119310_icon_BGwhite.svg">
     <link rel="stylesheet" type="text/css" href="../CSS/Header.css">
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
     <link rel="stylesheet" type="text/css" href="../CSS/Footer.css">
@@ -15,11 +20,11 @@
         <div class="nav-wrapper">
                 <nav class="header-nav">
                 <div class="nav-list">
-                    <div class="nav-item"><div class="nav-item-text" onclick="homeJPLink()">Home</div></div>
-                    <div class="nav-item"><div class="nav-item-text" onclick="profileJPLink()">Profile</div></div>
+                    <div class="nav-item"><div class="nav-item-text" onclick="homeJPLink()">ホーム</div></div>
+                    <div class="nav-item"><div class="nav-item-text" onclick="profileJPLink()">プロフィール</div></div>
                     <!-- <div class="nav-item"><div class="nav-item-text" onclick="newsJPLink()">News</div></div> -->
                     <!-- <div class="nav-item"><div class="nav-item-text" onclick="Mac020kLink()">Fun</div></div> -->
-                    <div class="nav-item"><div class="nav-item-text JP2EN" onclick="homeENLink()"></div></div>
+                    <div class="nav-item"><div class="nav-item-text JP2EN" onclick="homeENLink()">English</div></div>
                 </div>
             </nav>
         </div> 
@@ -36,9 +41,9 @@
 
     <main>
         <div class="discription">
-            <!-- <div class="selfPict">
-                写真挿入予定
-            </div> -->
+            <div class="selfPictArea">
+                <img src="../Images/Self.JPG" class="selfPict">
+            </div>
             <div>
                 <div class="MainName">
                     大塚 晟
@@ -47,16 +52,51 @@
                     Otsuka Makoto
                 </div>
                 <div class="currentPosition">
-                    <span>神戸市立工業高等専門学校</span> <span>電子工学科 5年</span>
+                    <span>神戸市立工業高等専門学校</span> <span>電子工学科 5年</span> <br> <span>高田研究室 SAI</span>
                 </div>
-                <p><span>分野 : </span><span>ヒューマン</span><span>コンピュータ</span><span>インタラクション</span></p>
+                <p><span>研究分野 : </span> <span>HCI</span></p>
+                <p><span>趣味 : </span> <span>EDM</span></p>
                 <p>Go to the <span class="link" onclick="homeENLink()">English Page</span></p>
+                <div class="linkbox">
+                    <img src="../Images/twitter.svg" class="linkIcon" onclick="twitterLink()">
+                    <img src="../Images/GitHub-Mark-64px.png" class="linkIcon"  onclick="githubLink()">
+                    <img src="../Images/SAI_ロゴ.png" class="linkIcon" onclick="SAIHPLink()">
+                </div>
             </div>
         </div>
 
         <div class="AboutMe">
             <h1>About Me</h1>
-            <p class="text">2004年生まれ、兵庫県神戸市出身。2019年神戸市立工業高等専門学校 電子工学科に入学、2024年3月卒業予定。同年4月より神戸市立工業高等専門学校 電気電子工学専攻 入学予定。<div class="link text" onclick="profileJPLink()">>>>詳細</div></p>
+            <div class="textbox">
+                <p>2004年生まれ、兵庫県神戸市出身。</p>
+                <p>2019年神戸市立工業高等専門学校 電子工学科に入学、2024年3月卒業予定。</p>
+                <p>同年4月より神戸市立工業高等専門学校 電気電子工学専攻 進学予定。</p>
+                <p>幼少期に海外に居住 ー 英検準一級、TOEIC 915点程度のスキル</p>
+                <p>過去に複数のアントレプレナーシップ教育プログラムに参加</p>
+                <div class="link text" onclick="profileJPLink()">>>>詳細</div>
+            </div>
+        </div>
+
+        <div class="Skills">
+            <h1>Skills</h1>
+            <p class="textbox">
+                <span>C</span>  <span>Python</span>  <span>LaTeX</span> <span>HTML</span>  <span>CSS</span>  <span>Processing</span> <span>日英翻訳</span>
+            </p>
+        </div>
+
+        <h1>研究発表</h1>
+        <div class="textbox">
+            <div class="tbl">
+                <div class="tblRow tblTop"></div>
+                <div class="tblRow">
+                    <div class="tblLeft">2024/02</div>
+                    <div class="tblRight">卒業論文「眼鏡型デバイスにおける耳ぴく入力手法」<br><span class="link" onclick="Thesis2023Link()">リンク</span></div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2024/03</div>
+                    <div class="tblRight"><span>インタラクション2024</span> <span>デモ・ポスター発表</span> <span>(3A09)「眼鏡型デバイスにおける耳ぴく入力手法」</span><br><span class="link" onclick="Interaction2024Link()">リンク</span></div>
+                </div>
+            </div>
         </div>
 
         <!-- <div class="NewsPreview">
@@ -68,7 +108,7 @@
 
     <footer>
         <div class="footertext">
-            © Makoto Otsuka 2023
+            © Makoto Otsuka 2024
         </div>
     </footer>
     
