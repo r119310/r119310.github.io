@@ -114,6 +114,7 @@ h1{
 
 .linkIcon{
     width: 2em;
+    height: auto;
     padding: 8px;
     border-radius: 50%;
     cursor: pointer;    
