@@ -176,6 +176,10 @@ h1{
         display: block;
     }
 
+    .ssIntro{
+        width: 100%;
+    }
+
     .selfPictArea{        
         text-align: center;
     }
