@@ -237,18 +237,18 @@
 
     .nav-list{        
       display: block;        
-      position: absolute;        
+      position: fixed;        
       top: 50%;        
       left: 50%;        
       transform: translate(-50%,-50%);        
       text-align: center;  
-      width: 70%;    
+      width: 70%;
     } 
 
     .nav-item{    
       margin-right: 5%;
       margin-left: 5%;        
-      margin-bottom: 30px;
+      margin-bottom: 3.3em;
     }
 
     .nav-item:hover{
@@ -256,7 +256,7 @@
     }
 
     .nav-item-text{
-      font-size: 5vh;
+      font-size: 2em;
       color: var(--textCLR);
       text-decoration: none;
       padding: 0.5em;

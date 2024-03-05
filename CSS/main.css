@@ -79,6 +79,11 @@ img{
     margin-bottom: 10px;
 }
 
+.ssIntro{
+    max-width: 24em;
+    width: 40vw;
+}
+
 span {
     display: inline-block;
 }
@@ -119,6 +124,12 @@ h1{
     border-radius: 50%;
     cursor: pointer;    
     transition: box-shadow 0.4s;
+    display: flex;
+}
+
+.IconImg{
+    width: 2em;
+    height: auto;
 }
 
 .linkIcon:hover{
