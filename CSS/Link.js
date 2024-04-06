@@ -49,3 +49,7 @@ function Thesis2023Link() {
 function Interaction2024Link() {
     window.open("https://sai.ac/project/Interaction2024_otsuka", '_blank')
 }
+
+function Interaction2024ItmediaLink() {
+    window.open("https://www.itmedia.co.jp/news/articles/2403/27/news062.html", '_blank')
+}
