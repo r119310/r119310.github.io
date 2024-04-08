@@ -3,6 +3,7 @@
     --textCLR: #1F223A;
     --borderCLR: #abcdef;
     --linkCLR: #637592;
+    --accentCLR: #a8c7eb;
 }
 
 body{
@@ -32,11 +33,26 @@ p{
     display: flex;
 }
 
+img{
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none; 
+    -o-user-select:none;
+    -ms-user-select:none;
+    user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+}
+
 .selfPict{
-    min-width: 30vw;
-    min-height: 30vw;
-    border: 2px solid var(--textCLR);
+    width: 16vw;
+    height: auto;
+    min-width: 24vh;
+    min-height: 30vh;
+    border: 2px solid var(--borderCLR);
+    border-radius: 10px;
     margin: 20px;
+    margin-right: calc(20px + 4vw);
     text-align: center;
 }
 
@@ -63,6 +79,10 @@ p{
     margin-bottom: 10px;
 }
 
+.ssIntro{
+    max-width: 24em;
+    width: 40vw;
+}
 
 span {
     display: inline-block;
@@ -72,8 +92,10 @@ h1{
     margin-block-end: 0.1em;
     /* border-bottom: 1px solid #A1A2AD; */
 }
-.text{
+.textbox{
     margin-left: 3em;
+    margin-right: 3em;
+    width: 100%;
 }
 
 .link{
@@ -88,17 +110,117 @@ h1{
     transition: transform 1s;
 }
 
+.linkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.linkIcon{
+    width: 2em;
+    height: auto;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;    
+    transition: box-shadow 0.4s;
+    display: flex;
+}
+
+.IconImg{
+    width: 2em;
+    height: auto;
+}
+
+.linkIcon:hover{
+    box-shadow: 0px 0px 6px var(--borderCLR);   
+}
+
+.tbl{
+    border-top: 2px solid var(--accentCLR);
+    width: calc(100% - 4em);
+    margin-bottom: 3em;
+}
+
+.tblTop{
+    border-bottom: 2px solid var(--accentCLR);
+    padding-top:4px;
+}
+
+.tblRow{
+    border-bottom: 2px solid var(--accentCLR);
+    display: flex;
+}
+
+.tblLeft{
+    padding: 1em;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 14em;
+    text-align: center;
+    vertical-align: text-top;
+    border-right: 2px solid var(--accentCLR);
+}
+
+
+.tblRight{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    justify-content: center;
+    width: 100%;
+    padding-left: 1em;
+}
+
 @media (min-width:1px) and (max-width:649px) {
     .discription{
         display: block;
     }
 
-    .selfPict{
-        width: 60vw;
-        height: 60vw;
+    .ssIntro{
+        width: 100%;
     }
 
-    .text{
-        margin-left: 0px;
+    .selfPictArea{        
+        text-align: center;
+    }
+
+    .selfPict{
+        margin:auto;
+        width: 40vw;
+        height: 50vw;
+    }
+
+    .textbox{
+        margin: 0em;
+    }
+
+    .tbl{
+        border: none;
+        width: 100%;
+    }
+
+    .tblRow{
+        width: 100%;
+        display:block;
+        border: none;
+    }
+
+    .tblTop{
+        display: none;
+    }
+
+    .tblLeft{
+        padding: 0px;
+        text-align: left;
+        opacity: 0.7;
+        width: auto;
+        border: none;
+        border-bottom: 2px solid var(--accentCLR);
+    }
+
+    .tblRight{
+        padding: 0px;
+        padding-bottom: 8px;
+        width: 100%;
     }
 }

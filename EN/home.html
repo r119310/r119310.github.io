@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="content-language" content="ja">
+    <meta name="keywords" content="Otsuka,Makoto,homepage,hp,">
+    <meta name="author" content="© 2024 Makoto Otsuka">
+    <meta name="description" content="Makoto Otsuka's Homepage"/>
+    <link rel="icon" type="image/png" sizes="128x128" href="/./Images/r119310_icon_128x128.png">
+    <link rel="shortcut icon" href="../Images/r119310_icon_BGwhite.svg">
     <link rel="stylesheet" type="text/css" href="../CSS/Header.css">
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
     <link rel="stylesheet" type="text/css" href="../CSS/Footer.css">
     <title>Home | Makoto Otsuka</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,7 +26,7 @@
                     <div class="nav-item"><div class="nav-item-text" onclick="profileENLink()">Profile</div></div>
                     <!-- <div class="nav-item"><div class="nav-item-text" onclick="newsJPLink()">News</div></div> -->
                     <!-- <div class="nav-item"><div class="nav-item-text" onclick="Mac020kLink()">Fun</div></div> -->
-                    <div class="nav-item"><div class="nav-item-text EN2JP" onclick="homeJPLink()"></div></div>
+                    <div class="nav-item"><div class="nav-item-text EN2JP" onclick="homeJPLink()">日本語</div></div>
                 </div>
             </nav>
         </div> 
@@ -29,17 +36,15 @@
             <span class="bar bar_bottom"></span>
         </button>
 
-        
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="../CSS/Header.js"></script>
     </header>
 
     <main>
-        <div class="discription">
-            <!-- <div class="selfPict">
-                写真挿入予定
-            </div> -->
-            <div>
+        <div class="discription">            
+            <div class="selfPictArea">
+                <img src="../Images/Self.webp" class="selfPict" alt="Self Picture">
+            </div>
+            <div class="ssIntro">
                 <div class="MainName">
                     Makoto Otsuka
                 </div>
@@ -47,16 +52,58 @@
                     大塚 晟
                 </div>
                 <div class="currentPosition">
-                    <span>Kobe City College of Technology(KCCT)</span> <span>Department of Electronics Senior</span>
+                    <span>Kobe City College of Technology(KCCT)</span> 
+                    <span>Advanced Course of Electric & Electronic Engineering 1st Year</span>
                 </div>
-                <p><span>Major : </span>Human Computer Interaction</p>
-                <p><span class="link" onclick="homeENLink()">日本語ページへ</span></p>
+                <p><span>Major : </span> <span>Electronics</span></p>
+                <p><span>Topics : </span> <span>HCI</span></p>
+                <p><span>Hobby : </span> <span>EDM</span></p>
+                <p><span class="link" onclick="homeJPLink()">日本語ページへ</span></p>
+                <div class="linkbox">
+                    <div class="linkIcon" onclick="twitterLink()">
+                        <img  class="IconImg" src="../Images/twitter.svg" alt="Twitter">
+                    </div>
+                    <div class="linkIcon"  onclick="githubLink()">
+                        <img  class="IconImg" src="../Images/GitHub-Mark-64px.png"  alt="GitHub">
+                    </div>
+                    <div class="linkIcon" onclick="SAIHPLink()">
+                        <img  class="IconImg" src="../Images/SAI_ロゴ.webp" alt="SAI Makoto Projects">
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="AboutMe">
             <h1>About Me</h1>
-            <p class="text">Born in 2004、from Kobe Hyogo.Entered in Department of Electronics of KCCT in 2019、assumed to graduate in March 2023. Entering Electric and Electronic Major of KCCT in April 2023.<div class="link text" onclick="profileJPLink()">>>>Details</div></p>
+            <div class="textbox">
+                <p>Born in 2004、from Kobe Hyogo.</p>
+                <p>Entered in Department of Electronics of KCCT in 2019、graduated in March 2024.</p>
+                <p> Entering Advanced Course of Electric & Electronic Engineering of KCCT in April 2023.</p>
+                <p>Lived in the US during childhood - English level : Eiken Pre 1, TOEIC 915</p>
+                <div class="link text" onclick="profileJPLink()">>>>Details</div>
+            </div>
+        </div>
+
+        <div class="Skills">
+            <h1>Skills</h1>
+            <p class="textbox">
+                <span>C</span>  <span>Python</span>  <span>LaTeX</span> <span>HTML</span>  <span>CSS</span>  <span>Processing</span> <span>Japanese/English Translation</span>
+            </p>
+        </div>
+
+        <h1>Research</h1>
+        <div class="textbox">
+            <div class="tbl">
+                <div class="tblRow tblTop"></div>
+                <div class="tblRow">
+                    <div class="tblLeft">2024/02</div>
+                    <div class="tblRight">Graduation Paper, Ear Wiggle Detection in Glasses-Shaped Devices<br><span class="link" onclick="Thesis2023Link()">Available in Japanese</span></div>
+                </div>
+                <div class="tblRow">
+                    <div class="tblLeft">2024/03</div>
+                    <div class="tblRight"><span>Interaction2024</span> <span>Demo & Poster</span> <span>(3A09) Ear Wiggle Detection in Glasses-Shaped Devices</span><br><span class="link" onclick="Interaction2024Link()">Available in Japanese</span></div>
+                </div>
+            </div>
         </div>
 
         <!-- <div class="NewsPreview">
@@ -68,7 +115,7 @@
 
     <footer>
         <div class="footertext">
-            © Makoto Otsuka 2023
+            © Makoto Otsuka 2024
         </div>
     </footer>
     
