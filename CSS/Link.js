@@ -1,13 +1,29 @@
-function homeJPLink() {
-    window.location.href = "https://r119310.github.io/JP/home.html";
+function homeLink() {
+    window.location.href = './home.html';
 }
 
-function profileJPLink() {
-    window.location.href = "https://r119310.github.io/JP/profile.html";
+function profileLink() {
+    window.location.href = './profile.html';
 }
 
-function newsJPLink() {
-    window.location.href = "https://r119310.github.io/JP/news.html";
+function newsLink() {
+    window.location.href = './news.html';
+}
+
+function JPLink() {
+    var currentUrl = window.location.href
+    var urlParts = currentUrl.split('/');
+    urlParts[urlParts.length - 2] = 'JP'; 
+    var newUrl = urlParts.join('/');
+    window.location.href = newUrl;
+}
+
+function ENLink() {
+    var currentUrl = window.location.href
+    var urlParts = currentUrl.split('/');
+    urlParts[urlParts.length - 2] = 'EN'; 
+    var newUrl = urlParts.join('/');
+    window.location.href = newUrl;
 }
 
 function Mac020kLink() {
@@ -16,18 +32,6 @@ function Mac020kLink() {
 
 function industEikenLink(){
     window.open("https://www.kobe-kosen.ac.jp/dayori/2019/dayori201907.html#190722kougyoueiken", '_blank')
-}
-
-function homeENLink() {
-    window.location.href = "https://r119310.github.io/EN/home.html";
-}
-
-function profileENLink() {
-    window.location.href = "https://r119310.github.io/EN/profile.html";
-}
-
-function newsJPLink() {
-    window.location.href = "https://r119310.github.io/EN/news.html";
 }
 
 function twitterLink() {
@@ -39,6 +43,10 @@ function githubLink() {
 }
 
 function SAIHPLink() {
+    window.open("https://sai.ac/", '_blank')
+}
+
+function SAIMakotoLink() {
     window.open("https://sai.ac/project?mode=author&q=%E5%A4%A7%E5%A1%9A", '_blank')
 }
 

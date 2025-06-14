@@ -10,34 +10,18 @@
     <meta name="description" content="神戸高専 電子工学科 SAI所属の大塚 晟のホームぺージ。"/>
     <link rel="icon" type="image/png" sizes="128x128" href="/./Images/r119310_icon_128x128.png">
     <link rel="shortcut icon" href="../Images/r119310_icon_BGwhite.svg">
-    <link rel="stylesheet" type="text/css" href="../CSS/Header.css">
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
     <link rel="stylesheet" type="text/css" href="../CSS/Footer.css">
     <title>Profile | 大塚 晟</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="nav-wrapper">
-                <nav class="header-nav">
-                <div class="nav-list">
-                    <div class="nav-item"><div class="nav-item-text" onclick="homeJPLink()">ホーム</div></div>
-                    <div class="nav-item"><div class="nav-item-text" onclick="profileJPLink()">プロフィール</div></div>
-                    <!-- <div class="nav-item"><div class="nav-item-text" onclick="newsJPLink()">News</div></div> -->
-                    <!-- <div class="nav-item"><div class="nav-item-text" onclick="Mac020kLink()">Fun</div></div> -->
-                    <div class="nav-item"><div class="nav-item-text JP2EN" onclick="profileENLink()">English</div></div>
-                </div>
-            </nav>
-        </div> 
-        <button class="burger-btn">
-            <span class="bar bar_top"></span>
-            <span class="bar bar_mid"></span>
-            <span class="bar bar_bottom"></span>
-        </button>
-
-        <script src="../CSS/Header.js"></script>
-    </header>
+    <div id="header"></div>
+    <script>
+        fetch("./components/header.html")
+          .then((response) => response.text())
+          .then((data) => document.querySelector("#header").innerHTML = data);
+    </script>
 
     <main>
         <div class="discription">
